@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Football_Standings" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2mq-NH-TCF">
+                                <rect key="frame" x="0.0" y="646" width="414" height="216"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </pickerView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="cJj-Iu-7sv">
+                                <rect key="frame" x="20" y="44" width="374" height="582"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="standingNumber" rowHeight="50" id="hKk-Zs-EiU" customClass="FootballTeamViewController" customModule="Football_Standings" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="374" height="50"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="hKk-Zs-EiU" id="T9l-dN-eVU">
+                                            <rect key="frame" x="0.0" y="0.0" width="374" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="0rG-SY-Vvr">
+                                                    <rect key="frame" x="0.0" y="0.0" width="374" height="50"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vb8-cK-D0X" userLabel="StandingNumberImage">
+                                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="50" id="IKB-ei-kmR"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lSA-H3-oEt" userLabel="StandingNumberText">
+                                                            <rect key="frame" x="52" y="0.0" width="50" height="50"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="50" id="1qc-db-Htb"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qmv-4x-G7c" userLabel="TeamName">
+                                                            <rect key="frame" x="104" y="0.0" width="218" height="50"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="WXV-QB-MkJ"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3AE-rM-iAH" userLabel="FormLabel">
+                                                            <rect key="frame" x="324" y="0.0" width="50" height="50"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="50" id="Qgi-5o-O8f"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="0rG-SY-Vvr" firstAttribute="top" secondItem="T9l-dN-eVU" secondAttribute="top" id="8f5-Ke-x7B"/>
+                                                <constraint firstAttribute="trailing" secondItem="0rG-SY-Vvr" secondAttribute="trailing" id="NEe-nu-Zsp"/>
+                                                <constraint firstAttribute="bottom" secondItem="0rG-SY-Vvr" secondAttribute="bottom" id="NrQ-af-KSN"/>
+                                                <constraint firstItem="0rG-SY-Vvr" firstAttribute="leading" secondItem="T9l-dN-eVU" secondAttribute="leading" id="k1Q-Lb-vnP"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <outlet property="StandingNumberImage" destination="vb8-cK-D0X" id="Jj5-OK-N3k"/>
+                                            <outlet property="backgroundView" destination="T9l-dN-eVU" id="tbV-9L-GNh"/>
+                                            <outlet property="formLabel" destination="3AE-rM-iAH" id="ZaP-mW-uhl"/>
+                                            <outlet property="standingNumberText" destination="lSA-H3-oEt" id="nWn-Jn-m40"/>
+                                            <outlet property="teamName" destination="qmv-4x-G7c" id="6OU-bk-dho"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="cJj-Iu-7sv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="2bX-Iu-qjO"/>
+                            <constraint firstItem="2mq-NH-TCF" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Bpl-9G-JtP"/>
+                            <constraint firstItem="2mq-NH-TCF" firstAttribute="top" secondItem="cJj-Iu-7sv" secondAttribute="bottom" constant="20" id="J8z-4l-rQa"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="cJj-Iu-7sv" secondAttribute="trailing" constant="20" id="KWc-JP-cTr"/>
+                            <constraint firstItem="cJj-Iu-7sv" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="TA6-8G-SAM"/>
+                            <constraint firstItem="2mq-NH-TCF" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="ypm-z2-zhO"/>
+                            <constraint firstItem="2mq-NH-TCF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="yyd-kb-Nn5"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="pickerSelection" destination="2mq-NH-TCF" id="xRd-gj-AB9"/>
+                        <outlet property="standingView" destination="cJj-Iu-7sv" id="Vio-wm-NDE"/>
+                        <segue destination="rgT-P6-c6J" kind="presentation" identifier="teamViewSegue" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="Qq8-rd-AER"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
+        </scene>
+        <!--Team InfoVC-->
+        <scene sceneID="Y3q-c0-g2b">
+            <objects>
+                <viewController id="rgT-P6-c6J" customClass="TeamInfoVC" customModule="Football_Standings" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fr5-5X-FbB">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="5Cp-7a-RGi">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="745"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bAa-va-Q3v">
+                                <rect key="frame" x="87" y="795" width="240" height="47"/>
+                                <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="240" id="TKi-kR-ESc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="30"/>
+                                <state key="normal" title="Back To Leagues">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="rgT-P6-c6J" eventType="touchUpInside" id="Xc5-kM-p3H"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="5Cp-7a-RGi" firstAttribute="leading" secondItem="ynr-dE-RA7" secondAttribute="leading" id="2TA-5u-9vQ"/>
+                            <constraint firstItem="bAa-va-Q3v" firstAttribute="centerX" secondItem="fr5-5X-FbB" secondAttribute="centerX" id="6Rg-nE-2BW"/>
+                            <constraint firstItem="bAa-va-Q3v" firstAttribute="top" secondItem="5Cp-7a-RGi" secondAttribute="bottom" constant="50" id="SIY-yS-wi6"/>
+                            <constraint firstItem="5Cp-7a-RGi" firstAttribute="trailing" secondItem="ynr-dE-RA7" secondAttribute="trailing" id="WGW-ed-7Xr"/>
+                            <constraint firstItem="ynr-dE-RA7" firstAttribute="bottom" secondItem="bAa-va-Q3v" secondAttribute="bottom" constant="20" id="aIe-G9-Wc3"/>
+                            <constraint firstItem="5Cp-7a-RGi" firstAttribute="top" secondItem="fr5-5X-FbB" secondAttribute="top" id="wDq-JE-4ee"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ynr-dE-RA7"/>
+                    </view>
+                    <connections>
+                        <outlet property="backToLeaguesButton" destination="bAa-va-Q3v" id="GBq-P0-Z2v"/>
+                        <outlet property="tableView" destination="5Cp-7a-RGi" id="sxx-zn-mYa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nFq-Zv-g0J" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1143" y="138"/>
+        </scene>
+    </scenes>
+</document>

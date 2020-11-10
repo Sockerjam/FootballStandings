@@ -1,0 +1,403 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		921C54E625385B7C008AD708 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921C54E525385B7C008AD708 /* AppDelegate.swift */; };
+		921C54E825385B7C008AD708 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921C54E725385B7C008AD708 /* SceneDelegate.swift */; };
+		921C54EA25385B7C008AD708 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921C54E925385B7C008AD708 /* ViewController.swift */; };
+		921C54ED25385B7C008AD708 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 921C54EB25385B7C008AD708 /* Main.storyboard */; };
+		921C54EF25385B7D008AD708 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 921C54EE25385B7D008AD708 /* Assets.xcassets */; };
+		921C54F225385B7D008AD708 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 921C54F025385B7D008AD708 /* LaunchScreen.storyboard */; };
+		921C54FD25386FC9008AD708 /* FootballStandingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921C54FC25386FC9008AD708 /* FootballStandingManager.swift */; };
+		921C550125388346008AD708 /* FootballTeamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921C550025388346008AD708 /* FootballTeamViewController.swift */; };
+		921C550325388BBF008AD708 /* FootballStandingsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921C550225388BBF008AD708 /* FootballStandingsData.swift */; };
+		921C55072538B009008AD708 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921C55062538B009008AD708 /* Constant.swift */; };
+		9294C9AB25496EB600ECCF2C /* TeamInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9294C9A925496EB600ECCF2C /* TeamInfoCell.swift */; };
+		9294C9AC25496EB600ECCF2C /* TeamInfoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9294C9AA25496EB600ECCF2C /* TeamInfoCell.xib */; };
+		9294C9B0254971F100ECCF2C /* TeamInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9294C9AF254971F100ECCF2C /* TeamInfoVC.swift */; };
+		9294C9B2254976E300ECCF2C /* TeamInfoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9294C9B1254976E300ECCF2C /* TeamInfoManager.swift */; };
+		9294C9B425497EEF00ECCF2C /* TeamInfoData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9294C9B325497EEF00ECCF2C /* TeamInfoData.swift */; };
+		EDE92024237E5CC6B9E76C93 /* Pods_Football_Standings.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCC853884D6B1AEA7C11ED0C /* Pods_Football_Standings.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		92F6ABBA254332B800B0B0B6 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0B8D57A2FBB10317F97752B0 /* Pods-Football Standings.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Football Standings.release.xcconfig"; path = "Target Support Files/Pods-Football Standings/Pods-Football Standings.release.xcconfig"; sourceTree = "<group>"; };
+		921C54E225385B7C008AD708 /* Football Standings.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Football Standings.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		921C54E525385B7C008AD708 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		921C54E725385B7C008AD708 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		921C54E925385B7C008AD708 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		921C54EC25385B7C008AD708 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		921C54EE25385B7D008AD708 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		921C54F125385B7D008AD708 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		921C54F325385B7D008AD708 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		921C54FC25386FC9008AD708 /* FootballStandingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FootballStandingManager.swift; sourceTree = "<group>"; };
+		921C550025388346008AD708 /* FootballTeamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FootballTeamViewController.swift; sourceTree = "<group>"; };
+		921C550225388BBF008AD708 /* FootballStandingsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FootballStandingsData.swift; sourceTree = "<group>"; };
+		921C55062538B009008AD708 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		9294C9A925496EB600ECCF2C /* TeamInfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamInfoCell.swift; sourceTree = "<group>"; };
+		9294C9AA25496EB600ECCF2C /* TeamInfoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TeamInfoCell.xib; sourceTree = "<group>"; };
+		9294C9AF254971F100ECCF2C /* TeamInfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamInfoVC.swift; sourceTree = "<group>"; };
+		9294C9B1254976E300ECCF2C /* TeamInfoManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamInfoManager.swift; sourceTree = "<group>"; };
+		9294C9B325497EEF00ECCF2C /* TeamInfoData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamInfoData.swift; sourceTree = "<group>"; };
+		DCC853884D6B1AEA7C11ED0C /* Pods_Football_Standings.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Football_Standings.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		921C54DF25385B7C008AD708 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDE92024237E5CC6B9E76C93 /* Pods_Football_Standings.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		921C54D925385B7C008AD708 = {
+			isa = PBXGroup;
+			children = (
+				921C54E425385B7C008AD708 /* Football Standings */,
+				921C54E325385B7C008AD708 /* Products */,
+				B33589CE0EF7872A6B02DEBE /* Pods */,
+				AEED73C6D2EBC3723A2F2258 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		921C54E325385B7C008AD708 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				921C54E225385B7C008AD708 /* Football Standings.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		921C54E425385B7C008AD708 /* Football Standings */ = {
+			isa = PBXGroup;
+			children = (
+				921C54E525385B7C008AD708 /* AppDelegate.swift */,
+				921C54E725385B7C008AD708 /* SceneDelegate.swift */,
+				921C54FB25385BBB008AD708 /* Model */,
+				921C54F925385B8F008AD708 /* View */,
+				921C54FA25385B9A008AD708 /* Controller */,
+				921C54EE25385B7D008AD708 /* Assets.xcassets */,
+				921C54F025385B7D008AD708 /* LaunchScreen.storyboard */,
+				921C54F325385B7D008AD708 /* Info.plist */,
+				921C55062538B009008AD708 /* Constant.swift */,
+			);
+			path = "Football Standings";
+			sourceTree = "<group>";
+		};
+		921C54F925385B8F008AD708 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				921C54EB25385B7C008AD708 /* Main.storyboard */,
+				9294C9A925496EB600ECCF2C /* TeamInfoCell.swift */,
+				9294C9AA25496EB600ECCF2C /* TeamInfoCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		921C54FA25385B9A008AD708 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				921C54E925385B7C008AD708 /* ViewController.swift */,
+				921C550025388346008AD708 /* FootballTeamViewController.swift */,
+				9294C9AF254971F100ECCF2C /* TeamInfoVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		921C54FB25385BBB008AD708 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				921C54FC25386FC9008AD708 /* FootballStandingManager.swift */,
+				921C550225388BBF008AD708 /* FootballStandingsData.swift */,
+				9294C9B1254976E300ECCF2C /* TeamInfoManager.swift */,
+				9294C9B325497EEF00ECCF2C /* TeamInfoData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AEED73C6D2EBC3723A2F2258 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DCC853884D6B1AEA7C11ED0C /* Pods_Football_Standings.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B33589CE0EF7872A6B02DEBE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0B8D57A2FBB10317F97752B0 /* Pods-Football Standings.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		921C54E125385B7C008AD708 /* Football Standings */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 921C54F625385B7D008AD708 /* Build configuration list for PBXNativeTarget "Football Standings" */;
+			buildPhases = (
+				F251B96DB5A647C4DE42648D /* [CP] Check Pods Manifest.lock */,
+				921C54DE25385B7C008AD708 /* Sources */,
+				921C54DF25385B7C008AD708 /* Frameworks */,
+				921C54E025385B7C008AD708 /* Resources */,
+				92F6ABBA254332B800B0B0B6 /* Embed Frameworks */,
+				C548A8B664F119E9BE8C3334 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Football Standings";
+			productName = "Football Standings";
+			productReference = 921C54E225385B7C008AD708 /* Football Standings.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		921C54DA25385B7C008AD708 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1160;
+				LastUpgradeCheck = 1160;
+				ORGANIZATIONNAME = "Niclas Jeppsson";
+				TargetAttributes = {
+					921C54E125385B7C008AD708 = {
+						CreatedOnToolsVersion = 11.6;
+					};
+				};
+			};
+			buildConfigurationList = 921C54DD25385B7C008AD708 /* Build configuration list for PBXProject "Football Standings" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 921C54D925385B7C008AD708;
+			productRefGroup = 921C54E325385B7C008AD708 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				921C54E125385B7C008AD708 /* Football Standings */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		921C54E025385B7C008AD708 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9294C9AC25496EB600ECCF2C /* TeamInfoCell.xib in Resources */,
+				921C54F225385B7D008AD708 /* LaunchScreen.storyboard in Resources */,
+				921C54EF25385B7D008AD708 /* Assets.xcassets in Resources */,
+				921C54ED25385B7C008AD708 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C548A8B664F119E9BE8C3334 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Football Standings/Pods-Football Standings-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Football Standings/Pods-Football Standings-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Football Standings/Pods-Football Standings-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F251B96DB5A647C4DE42648D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Football Standings-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		921C54DE25385B7C008AD708 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9294C9AB25496EB600ECCF2C /* TeamInfoCell.swift in Sources */,
+				921C54EA25385B7C008AD708 /* ViewController.swift in Sources */,
+				921C54E625385B7C008AD708 /* AppDelegate.swift in Sources */,
+				921C550325388BBF008AD708 /* FootballStandingsData.swift in Sources */,
+				921C55072538B009008AD708 /* Constant.swift in Sources */,
+				921C550125388346008AD708 /* FootballTeamViewController.swift in Sources */,
+				921C54FD25386FC9008AD708 /* FootballStandingManager.swift in Sources */,
+				9294C9B0254971F100ECCF2C /* TeamInfoVC.swift in Sources */,
+				9294C9B2254976E300ECCF2C /* TeamInfoManager.swift in Sources */,
+				921C54E825385B7C008AD708 /* SceneDelegate.swift in Sources */,
+				9294C9B425497EEF00ECCF2C /* TeamInfoData.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		921C54EB25385B7C008AD708 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				921C54EC25385B7C008AD708 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		921C54F025385B7D008AD708 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				921C54F125385B7D008AD708 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		921C54F525385B7D008AD708 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		921C54F825385B7D008AD708 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B8D57A2FBB10317F97752B0 /* Pods-Football Standings.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Football Standings/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.youraudiosolutions.Football-Standings";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		921C54DD25385B7C008AD708 /* Build configuration list for PBXProject "Football Standings" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				921C54F525385B7D008AD708 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		921C54F625385B7D008AD708 /* Build configuration list for PBXNativeTarget "Football Standings" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				921C54F825385B7D008AD708 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 921C54DA25385B7C008AD708 /* Project object */;
+}

@@ -1,0 +1,6 @@
+framework module SVGWebRenderer {
+  umbrella header "SVGWebRenderer-umbrella.h"
+
+  export *
+  module * { export * }
+}
