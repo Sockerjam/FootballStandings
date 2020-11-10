@@ -56,7 +56,7 @@ extension UIImageView {
                 }
             }
         } else {
-            self.kf.setImage(with: url, placeholder: placeholder) { [weak self] (image, _, _, _) in
+            self.kf.setImage(with: url, placeholder: placeholder, completionHandler:  { [weak self] (image, _, _, _) in
                 if image == nil {
                     SVGRenderer.shared().renderSVG(withUrl: url, size: size) { (image) in
                         self?.image = image
@@ -69,7 +69,7 @@ extension UIImageView {
                         completion(image)
                     }
                 }
-            }
+            })
         }
     }
 }
